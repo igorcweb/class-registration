@@ -1,0 +1,28 @@
+{
+  "name": "class-registration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/igorcweb/class-registration",
+  "authors": "Igor Chernyshev & Alice Won",
+  "license": "MIT",
+  "scripts": {
+    "start-server": "nodemon index.js --exec babel-node --presets env",
+    "build-css": "node-sass -o public/css scss/main.scss -w",
+    "start": "npm-run-all -p start-server build-css"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.4",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "dotenv": "^5.0.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.12",
+    "npm-run-all": "^4.1.2"
+  }
+}

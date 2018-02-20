@@ -1,0 +1,10 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+
+/dist
+
+# dotenv environment variables file
+.env
